@@ -53,7 +53,7 @@ ___________
 ##Persona
 ![Alt Image Text](images/persona.jpg)
 ##Search highlights
-![Alt Image Text](images/IMG_5018.jpg)
+![Alt Image Text](images/research.png)
 
 ##User stories
 ####Lim Yuan
@@ -83,8 +83,8 @@ Matt need to travel from campuses to get into different class topics. After clas
 TODO
 
 ##Problem statement worksheet
-![Alt Image Text](images/IMG_5020.jpg)
-![Alt Image Text](images/IMG_5019.jpg)
+![Alt Image Text](images/Screen-Shot-might.png)
+![Alt Image Text](images/Screen-Shot-statement.png)
 ##Priorities features
 * To do list
 
