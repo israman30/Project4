@@ -84,7 +84,7 @@ TODO
 
 ##Problem statement worksheet
 ![Alt Image Text](images/might.jpg)
-
+![Alt Image Text](images/statemen.jpg)
 ##Priorities features
 * To do list
 
