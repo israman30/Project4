@@ -83,7 +83,7 @@ Matt need to travel from campuses to get into different class topics. After clas
 --------------
 --------------
 
-##Competitive analysis screenshot
+##Competitive analysis table
 
 Competitors     | Website     | Auths      |  Friendly UI | 
 ----------------|-------------|------------|--------------|
