@@ -1,7 +1,7 @@
 ##Project 4 "iO"
 #Research Plan Worksheet 
 
-###General Assembly student's interview
+###General people interviewed
 
 ##Author
 ###Israel Manzo
