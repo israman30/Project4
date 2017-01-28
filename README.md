@@ -1,6 +1,6 @@
-##Project 4
+##Project 4 "iO"
 #Research Plan Worksheet 
-##Project 4 "App Name"
+
 ###General Assembly student's interview
 
 ##Author
