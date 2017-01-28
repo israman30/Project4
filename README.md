@@ -5,6 +5,10 @@
 
 ##Author
 ###Israel Manzo
+iOSI at General Assembly
+
+New York, NY
+
 <israelmanzo814@gmail.com>
 
 Date: January 30, 2017
