@@ -84,7 +84,15 @@ Matt need to travel from campuses to get into different class topics. After clas
 --------------
 
 ##Competitive analysis screenshot
-TODO
+
+Competitors     | Website     | Auths      |  Friendly UI | 
+----------------|-------------|------------|--------------|
+Do.List         | App Store   | Yes        |    Yes       |
+Notes           | App Store   | No         |    No        |
+Productivity    | App Store   | Yes        |    No        |
+Do!             | App Store   | Yes        |    Yes       |
+Wonderlist      | App Store   | Yes        |    No        |
+Todoist         | App Store   | No         |    Yes       |
 
 ##Problem statement worksheet
 ![Alt Image Text](images/Screen-Shot-might.png)
