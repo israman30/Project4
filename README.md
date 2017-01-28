@@ -7,7 +7,7 @@
 ###Israel Manzo
 iOSI at General Assembly
 
-New York, NY
+*New York, NY*
 
 <israelmanzo814@gmail.com>
 
