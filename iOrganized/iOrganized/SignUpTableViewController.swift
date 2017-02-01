@@ -16,18 +16,25 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
     @IBOutlet weak var passwordTxtField: UITextField!
     @IBOutlet weak var locationTxtfield: UITextField!
 
-//    var countriesArray = [String]()
+    var countriesArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        for code in NSLocale.isoCountryCodes as [String] {
-//            let id = NSLocale.localeIdentifier(fromComponents: <#T##[String : String]#>)
-////            let id = NSLocale.localeIdentifier(fromComponents: [CFLocaleIdentifier:code])
-//            
-//        }
+        emailTxtFiel.backgroundColor = .clear
+        emailTxtFiel.layer.cornerRadius = 5
+        emailTxtFiel.layer.borderWidth = 1
+//        loginButtonOutlet.layer.borderColor = UIColor.white.cgColor
+        
+        for code in Locale.isoRegionCodes {
+            
+            
+            let country = Locale.current.localizedString(forRegionCode: code)
+//            print(country)
+        }
+        
     }
-
+    // MARK: Action Button that allows to use camera, photo library, save and cancel 
     @IBAction func choosePic(_ sender: Any) {
         let pickerController = UIImagePickerController()
         pickerController.delegate = self

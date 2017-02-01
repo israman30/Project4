@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D059D2D1E4011E400B268EA /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D059D2C1E4011E400B268EA /* CustomImageView.swift */; };
-		8D059D301E4015D500B268EA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D059D2F1E4015D500B268EA /* CustomButton.swift */; };
-		8D059D321E40170D00B268EA /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D059D311E40170D00B268EA /* CustomTextField.swift */; };
 		8D059D341E4033BA00B268EA /* NetworkingSerivices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D059D331E4033BA00B268EA /* NetworkingSerivices.swift */; };
 		8D4FADF91E3EAF8C00573ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FADF81E3EAF8C00573ED9 /* AppDelegate.swift */; };
 		8D4FADFB1E3EAF8C00573ED9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FADFA1E3EAF8C00573ED9 /* ViewController.swift */; };
@@ -27,9 +24,6 @@
 /* Begin PBXFileReference section */
 		527AD971EB23A4695A248277 /* Pods-iOrganized.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOrganized.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOrganized/Pods-iOrganized.debug.xcconfig"; sourceTree = "<group>"; };
 		8958F830AA62B01E0B735D3A /* Pods_iOrganized.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOrganized.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D059D2C1E4011E400B268EA /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
-		8D059D2F1E4015D500B268EA /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		8D059D311E40170D00B268EA /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		8D059D331E4033BA00B268EA /* NetworkingSerivices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingSerivices.swift; sourceTree = "<group>"; };
 		8D4FADF51E3EAF8C00573ED9 /* iOrganized.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOrganized.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4FADF81E3EAF8C00573ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,9 +55,6 @@
 		8D059D2E1E40120D00B268EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8D059D2C1E4011E400B268EA /* CustomImageView.swift */,
-				8D059D2F1E4015D500B268EA /* CustomButton.swift */,
-				8D059D311E40170D00B268EA /* CustomTextField.swift */,
 				8D059D331E4033BA00B268EA /* NetworkingSerivices.swift */,
 			);
 			name = Model;
@@ -267,12 +258,9 @@
 				8D4FAE171E3ED27600573ED9 /* DescriptionTableViewController.swift in Sources */,
 				8D4FADFB1E3EAF8C00573ED9 /* ViewController.swift in Sources */,
 				8D4FAE0F1E3EB58800573ED9 /* SignUpTableViewController.swift in Sources */,
-				8D059D2D1E4011E400B268EA /* CustomImageView.swift in Sources */,
-				8D059D301E4015D500B268EA /* CustomButton.swift in Sources */,
 				8D4FADF91E3EAF8C00573ED9 /* AppDelegate.swift in Sources */,
 				8D4FAE151E3ECCDE00573ED9 /* ListTableViewController.swift in Sources */,
 				8D4FAE111E3EB5BD00573ED9 /* ResetViewController.swift in Sources */,
-				8D059D321E40170D00B268EA /* CustomTextField.swift in Sources */,
 				8D059D341E4033BA00B268EA /* NetworkingSerivices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

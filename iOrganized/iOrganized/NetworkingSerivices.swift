@@ -23,7 +23,7 @@ struct NetworkingService {
         let userRef = dataBaseRef.child("users").child(user.uid)
         userRef.setValue(userInfo)
     
-        //siging in the use
+        //siging in the user and saving info
         signIn(email: user.email!, password: password)
     }
     
@@ -39,7 +39,7 @@ struct NetworkingService {
             }
         })
     }
-    
+    // This function create a new user
     private func setUserInfo(user: FIRUser, username: String, password:String, location: String, data: NSData!){
         
         let imagePath = "profilImage\(user.uid)/userPic.jpg"
