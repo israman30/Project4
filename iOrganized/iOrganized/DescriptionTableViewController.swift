@@ -57,8 +57,8 @@ class DescriptionTableViewController: UITableViewController {
         let todo = ToDo(title: title, content: content, username: FIRAuth.auth()!.currentUser!.displayName!, red: red, blue: blue, green: green)
         todoRef.setValue(todo.toAnyObject())
         
-        self.navigationController?.popToRootViewController(animated: true)
-        
+//        self.navigationController?.popToRootViewController(animated: true)
+//        
     }
     
 
