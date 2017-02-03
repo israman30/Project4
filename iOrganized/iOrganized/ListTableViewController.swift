@@ -13,6 +13,8 @@ import FirebaseStorage
 
 class ListTableViewController: UITableViewController {
 
+    let networkingServices = NetworkingService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

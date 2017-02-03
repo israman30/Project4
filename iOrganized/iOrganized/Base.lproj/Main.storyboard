@@ -157,8 +157,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="223"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-user" translatesAutoresizingMaskIntoConstraints="NO" id="FOS-3e-98J">
+                                                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FOS-3e-98J">
                                                     <rect key="frame" x="97" y="19" width="185" height="185"/>
+                                                    <color key="backgroundColor" red="0.2484132349" green="0.57395762210000001" blue="0.75405180449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <gestureRecognizers/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="185" id="0zJ-rT-tOI"/>
@@ -699,6 +700,5 @@
     </scenes>
     <resources>
         <image name="backgorund" width="640" height="1136"/>
-        <image name="placeholder-user" width="600" height="600"/>
     </resources>
 </document>

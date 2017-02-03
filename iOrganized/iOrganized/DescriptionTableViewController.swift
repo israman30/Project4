@@ -28,6 +28,7 @@ class DescriptionTableViewController: UITableViewController {
        
     }
     
+    // MARK: This action will save each descrition list
     @IBAction func save(_ sender: Any) {
         
         let todoRef = databaseRef.child("allLists").childByAutoId()
@@ -53,9 +54,10 @@ class DescriptionTableViewController: UITableViewController {
         }
         
         
-        
         let todo = ToDo(title: title, content: content, username: FIRAuth.auth()!.currentUser!.displayName!, red: red, blue: blue, green: green)
         todoRef.setValue(todo.toAnyObject())
+        
+        self.navigationController?.popToRootViewController(animated: true)
         
     }
     
@@ -66,15 +68,14 @@ class DescriptionTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 2
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
    }
