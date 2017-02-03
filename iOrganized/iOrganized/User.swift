@@ -14,8 +14,8 @@ import FirebaseDatabase
 
 struct User {
 
-    var username:String
-    var email:String
+    var username: String
+    var email: String
     var photoUrl: String
     var location: String
     var ref: FIRDatabaseReference?
@@ -23,10 +23,11 @@ struct User {
     
     init(snapshot: FIRDataSnapshot) {
         key = snapshot.key
-        username = snapshot.value as! String
-        email = snapshot.value as! String
-        photoUrl = snapshot.value as! String
-        location = snapshot.value as! String
+        let snapshotValue = snapshot.value as! [String:Any]
+        username = snapshotValue["username"] as! String
+        email = snapshotValue["email"] as! String
+        photoUrl = snapshotValue["photoUrl"] as! String
+        location = snapshotValue["location"] as! String
         ref = snapshot.ref
     }
     
