@@ -103,6 +103,7 @@
 		8D4FAE121E3EB5DB00573ED9 /* LogicVC */ = {
 			isa = PBXGroup;
 			children = (
+				8DA11A421E4512940040A546 /* Outlets */,
 				8D4FADF81E3EAF8C00573ED9 /* AppDelegate.swift */,
 				8D4FADFA1E3EAF8C00573ED9 /* ViewController.swift */,
 				8D4FAE0E1E3EB58800573ED9 /* SignUpTableViewController.swift */,
@@ -110,7 +111,6 @@
 				8D4FAE101E3EB5BD00573ED9 /* ResetViewController.swift */,
 				8D4FAE141E3ECCDE00573ED9 /* ListTableViewController.swift */,
 				8D4FAE161E3ED27600573ED9 /* DescriptionTableViewController.swift */,
-				8DD3F9581E450AF0003183EB /* ListOfTableViewCell.swift */,
 			);
 			name = LogicVC;
 			sourceTree = "<group>";
@@ -123,6 +123,14 @@
 				8D4FAE011E3EAF8C00573ED9 /* LaunchScreen.storyboard */,
 			);
 			name = UIs;
+			sourceTree = "<group>";
+		};
+		8DA11A421E4512940040A546 /* Outlets */ = {
+			isa = PBXGroup;
+			children = (
+				8DD3F9581E450AF0003183EB /* ListOfTableViewCell.swift */,
+			);
+			name = Outlets;
 			sourceTree = "<group>";
 		};
 		D0F66FDDE4FA3FF46BE2DC4E /* Pods */ = {
