@@ -62,10 +62,8 @@ class MyProfileViewController: UIViewController {
                         }
                     }
                 })
-                
-                
-                
             }
+            
         }) { (error) in
             print(error.localizedDescription)
         }

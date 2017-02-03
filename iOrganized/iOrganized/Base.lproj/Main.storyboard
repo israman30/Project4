@@ -432,7 +432,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="142" id="ERr-Tr-JDL">
-                                <rect key="frame" x="0.0" y="55" width="375" height="143"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="142"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ERr-Tr-JDL" id="S07-ze-503">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
@@ -544,8 +544,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Xcg-c3-DQy">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="OrP-Ze-90V"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="OrP-Ze-90V">
+                            <connections>
+                                <action selector="save:" destination="eRK-km-a60" id="3Gb-Wg-Ybh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTxtField" destination="dUU-CP-AHd" id="BzG-vZ-uaE"/>
+                        <outlet property="itemNameTxtField" destination="rg1-lD-EeN" id="JHg-Vk-Y5j"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cZ-fs-szo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

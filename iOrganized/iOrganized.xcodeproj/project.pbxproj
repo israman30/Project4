@@ -20,6 +20,7 @@
 		8D4FAE151E3ECCDE00573ED9 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FAE141E3ECCDE00573ED9 /* ListTableViewController.swift */; };
 		8D4FAE171E3ED27600573ED9 /* DescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FAE161E3ED27600573ED9 /* DescriptionTableViewController.swift */; };
 		8DD3F9551E440E1A003183EB /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3F9541E440E1A003183EB /* MyProfileViewController.swift */; };
+		8DD3F9571E443A36003183EB /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3F9561E443A36003183EB /* ToDo.swift */; };
 		CF14A096417A1553AEA95405 /* Pods_iOrganized.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8958F830AA62B01E0B735D3A /* Pods_iOrganized.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		8D4FAE141E3ECCDE00573ED9 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		8D4FAE161E3ED27600573ED9 /* DescriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewController.swift; sourceTree = "<group>"; };
 		8DD3F9541E440E1A003183EB /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		8DD3F9561E443A36003183EB /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		AC07B4146015B6B684995EC6 /* Pods-iOrganized.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOrganized.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOrganized/Pods-iOrganized.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 			children = (
 				8D059D331E4033BA00B268EA /* NetworkingSerivices.swift */,
 				8D0DC1621E440A6C00E2BD47 /* User.swift */,
+				8DD3F9561E443A36003183EB /* ToDo.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D4FAE171E3ED27600573ED9 /* DescriptionTableViewController.swift in Sources */,
+				8DD3F9571E443A36003183EB /* ToDo.swift in Sources */,
 				8D4FADFB1E3EAF8C00573ED9 /* ViewController.swift in Sources */,
 				8D4FAE0F1E3EB58800573ED9 /* SignUpTableViewController.swift in Sources */,
 				8DD3F9551E440E1A003183EB /* MyProfileViewController.swift in Sources */,

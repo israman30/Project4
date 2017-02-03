@@ -7,18 +7,58 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+import FirebaseStorage
+import FirebaseAuth
 
 class DescriptionTableViewController: UITableViewController {
+    
+    @IBOutlet weak var itemNameTxtField: UITextField!
 
+    @IBOutlet weak var descriptionTxtField: UITextView!
+    
+    var databaseRef: FIRDatabaseReference! {
+        return FIRDatabase.database().reference()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+       
     }
+    
+    @IBAction func save(_ sender: Any) {
+        
+        let todoRef = databaseRef.child("allLists").childByAutoId()
+        
+        let red = CGFloat(arc4random_uniform(UInt32(255.5)))/255.5
+        let blue = CGFloat(arc4random_uniform(UInt32(255.5)))/255.5
+        let green = CGFloat(arc4random_uniform(UInt32(255.5)))/255.5
+        
+        var title = String()
+        if itemNameTxtField.text == "" {
+            itemNameTxtField.text = "No item name"
+            title = itemNameTxtField.text!
+        } else {
+            title = itemNameTxtField.text!
+        }
+        
+        var content = String()
+        if descriptionTxtField.text == "" {
+            descriptionTxtField.text = "No description"
+            content = descriptionTxtField.text
+        } else {
+            content = descriptionTxtField.text
+        }
+        
+        
+        
+        let todo = ToDo(title: title, content: content, username: FIRAuth.auth()!.currentUser!.displayName!, red: red, blue: blue, green: green)
+        todoRef.setValue(todo.toAnyObject())
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -37,13 +77,4 @@ class DescriptionTableViewController: UITableViewController {
         return 0
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-}
+   }
