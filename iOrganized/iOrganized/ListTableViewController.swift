@@ -8,21 +8,35 @@
 
 import UIKit
 import Firebase
-import FirebaseDatabase
 import FirebaseStorage
+import FirebaseDatabase
 
 class ListTableViewController: UITableViewController {
 
-    let networkingServices = NetworkingService()
+    var listArray = [ToDo]()
+    
+    var databaseRef: FIRDatabaseReference!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        databaseRef = FIRDatabase.database().reference().child("allLists")
+        
+        databaseRef.observe(.value, with: { (snapshot) in
+            
+            let items = [ToDo]()
+            
+            for item in snapshot.children {
+                let newItem = ToDo(snapshot: item as! FIRDataSnapshot)
+                items.insert(newItem, at: 0)
+            }
+            self.listArray = items
+            self.tableView.reloadData()
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,10 +45,9 @@ class ListTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return listArray.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,13 +55,13 @@ class ListTableViewController: UITableViewController {
         return 0
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListOfTableViewCell
 
         // Configure the cell...
 
         return cell
-    }*/
+    }
  
 }

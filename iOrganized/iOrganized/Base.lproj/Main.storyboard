@@ -432,7 +432,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="142" id="ERr-Tr-JDL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="142" id="ERr-Tr-JDL" customClass="ListOfTableViewCell" customModule="iOrganized" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="56" width="375" height="142"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ERr-Tr-JDL" id="S07-ze-503">
@@ -468,6 +468,12 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="colorView" destination="OB8-qI-4L0" id="9Ms-BW-nMN"/>
+                                    <outlet property="descriptionLabel" destination="o0Y-D6-eX8" id="J3n-oX-63g"/>
+                                    <outlet property="titleLabel" destination="cHk-tW-l17" id="NWR-sM-f3N"/>
+                                    <outlet property="usernameLabel" destination="JQ6-GX-m5D" id="fBa-wp-MSO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
