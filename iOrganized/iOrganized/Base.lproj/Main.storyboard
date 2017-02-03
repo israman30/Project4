@@ -112,6 +112,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="logInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gcx-15-bhn"/>
                                     <segue destination="kOe-Fn-3oM" kind="show" id="2uh-n7-987"/>
                                 </connections>
                             </button>
@@ -129,6 +130,10 @@
                             <constraint firstItem="EhV-UW-m4A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ti0-1Q-vRe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="YEi-ay-Nnu" id="iUT-yl-592"/>
+                        <outlet property="username" destination="NXE-49-dmU" id="RjE-kn-Pdk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -562,7 +567,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="LTZ-rf-aXh">
             <objects>
-                <tabBarController id="kOe-Fn-3oM" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Home" id="kOe-Fn-3oM" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="wmm-iu-yyp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

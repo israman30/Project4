@@ -7,8 +7,16 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseStorage
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var username: UITextField!
+    
+    @IBOutlet weak var password: UITextField!
+    let networkingServices = NetworkingService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +30,12 @@ class ViewController: UIViewController {
     
     @IBAction func unwindToLogin(storyboard: UIStoryboardSegue){}
 
+    @IBAction func logInButton(_ sender: Any) {
+        
+        networkingServices.signIn(email: username.text!, password: password.text!)
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home")
+        present(vc, animated: true, completion: nil)
+    }
 
 }
 

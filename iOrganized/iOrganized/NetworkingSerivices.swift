@@ -14,8 +14,12 @@ import FirebaseDatabase
 
 struct NetworkingService {
 
-    let dataBaseRef = FIRDatabase.database().reference()
-    let storageRef = FIRStorage.storage().reference()
+    var dataBaseRef: FIRDatabaseReference! {
+        return FIRDatabase.database().reference()
+    }
+    var storageRef: FIRStorageReference! {
+        return FIRStorage.storage().reference()
+    }
     
     // MARK: 3.- Saving userinfo in database
     private func saveInfo(user: FIRUser, username: String, password:String, location: String){
