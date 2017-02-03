@@ -40,7 +40,7 @@ struct NetworkingService {
         })
     }
     // This function create a new user
-    private func setUserInfo(user: FIRUser, username: String, password:String, location: String, data: NSData!){
+    private func setUserInfo(user: FIRUser, username: String, password:String, location: String, data: Data!){
         
         let imagePath = "profilImage\(user.uid)/userPic.jpg"
         
@@ -50,12 +50,12 @@ struct NetworkingService {
         
         metaData .contentType = "image/jpg"
         
-        imageRef.put(data as Data, metadata: metaData) { (metaData, error) in
+        imageRef.put(data, metadata: metaData) { (metaData, error) in
             if error == nil {
                 
                 let changeRequest = user.profileChangeRequest()
                 changeRequest.displayName = username
-                changeRequest.photoURL =  metaData?.downloadURL()
+                changeRequest.photoURL =  metaData!.downloadURL()
                 changeRequest.commitChanges(completion: { (error) in
                     if error == nil {
                         self.saveInfo(user: user, username: username , password: password, location: location)

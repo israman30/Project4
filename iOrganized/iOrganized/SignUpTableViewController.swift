@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SignUpTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var userNameTxtField: UITextField!
@@ -17,6 +17,8 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
     @IBOutlet weak var locationTxtfield: UITextField!
 
     var countriesArray = [String]()
+    var pickerView = UIPickerView()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,14 +28,54 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
         emailTxtFiel.layer.borderWidth = 1
 //        loginButtonOutlet.layer.borderColor = UIColor.white.cgColor
         
+        // This loop will get the countries from Locale apple property
         for code in Locale.isoRegionCodes {
-            
-            
-            let country = Locale.current.localizedString(forRegionCode: code)
-//            print(country)
+            let country = Locale.current.localizedString(forRegionCode: code)!
+            print(code)
+            let name = Locale(identifier: "en_EN").localizedString(forCollationIdentifier: country) ?? "\(country)"
+            print("Found countries \(country)")
+            countriesArray.append(name)
+            countriesArray.sort(by: { (name1, name2) -> Bool in
+                name1 < name2
+            })
         }
+    
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        pickerView.backgroundColor = UIColor.black
+        locationTxtfield.inputView = pickerView
         
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector( SignUpTableViewController.dismissController(gesture:)))
+        tapGestureRecognizer.numberOfTapsRequired = 1
+        self.view.addGestureRecognizer(tapGestureRecognizer)
     }
+    
+    // dismiss view controller after picker get call
+    func dismissController(gesture: UIGestureRecognizer){
+        self.view.endEditing(true)
+    }
+    
+    // MARK: Delages and data source Picker controller functions
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return countriesArray[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        locationTxtfield.text = countriesArray[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return countriesArray.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let title = NSAttributedString(string: countriesArray[row], attributes: [NSForegroundColorAttributeName: UIColor.white])
+        return title
+    }
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    
     // MARK: Action Button that allows to use camera, photo library, save and cancel 
     @IBAction func choosePic(_ sender: Any) {
         let pickerController = UIImagePickerController()
