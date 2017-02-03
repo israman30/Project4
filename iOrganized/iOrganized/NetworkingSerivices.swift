@@ -17,6 +17,7 @@ struct NetworkingService {
     let dataBaseRef = FIRDatabase.database().reference()
     let storageRef = FIRStorage.storage().reference()
     
+    // MARK: 3.- Saving userinfo in database
     private func saveInfo(user: FIRUser, username: String, password:String, location: String){
         let userInfo = ["email":user.email, "username": username, "location":location, "uid":user.uid, "photoUrl":String(describing: user.photoURL!)]
         
@@ -27,19 +28,20 @@ struct NetworkingService {
         signIn(email: user.email!, password: password)
     }
     
-    //sign in user
+    //MARK: 4.- sign in the user
     func signIn(email: String, password: String){
         FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
             if error == nil {
                 if let user = user {
-                    print("\(user.displayName) has signed in succesfully!")
+                    print("\(user.displayName!) has signed in succesfully!")
                 }
             } else {
                 print(error!.localizedDescription)
             }
         })
     }
-    // This function create a new user
+    
+    // MARK: 2.- set user info
     private func setUserInfo(user: FIRUser, username: String, password:String, location: String, data: Data!){
         
         let imagePath = "profilImage\(user.uid)/userPic.jpg"
@@ -58,7 +60,9 @@ struct NetworkingService {
                 changeRequest.photoURL =  metaData!.downloadURL()
                 changeRequest.commitChanges(completion: { (error) in
                     if error == nil {
+                        
                         self.saveInfo(user: user, username: username , password: password, location: location)
+                        
                     } else {
                         print(error!.localizedDescription)
                     }
@@ -68,6 +72,20 @@ struct NetworkingService {
                 print(error!.localizedDescription)
             }
         }
+    }
+    
+    // MARK: 1.- create a user
+    func signUp(email: String ,username: String, password:String, location: String, data: Data!){
+        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+            if error == nil {
+                
+                self.setUserInfo(user: user!, username: username, password: password, location: location, data: data)
+            
+            } else {
+                print(error!.localizedDescription)
+            }
+        })
+    
     }
     
     

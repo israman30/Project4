@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8D059D341E4033BA00B268EA /* NetworkingSerivices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D059D331E4033BA00B268EA /* NetworkingSerivices.swift */; };
+		8D0DC1631E440A6C00E2BD47 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0DC1621E440A6C00E2BD47 /* User.swift */; };
 		8D4FADF91E3EAF8C00573ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FADF81E3EAF8C00573ED9 /* AppDelegate.swift */; };
 		8D4FADFB1E3EAF8C00573ED9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FADFA1E3EAF8C00573ED9 /* ViewController.swift */; };
 		8D4FADFE1E3EAF8C00573ED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4FADFC1E3EAF8C00573ED9 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		527AD971EB23A4695A248277 /* Pods-iOrganized.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOrganized.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOrganized/Pods-iOrganized.debug.xcconfig"; sourceTree = "<group>"; };
 		8958F830AA62B01E0B735D3A /* Pods_iOrganized.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOrganized.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D059D331E4033BA00B268EA /* NetworkingSerivices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingSerivices.swift; sourceTree = "<group>"; };
+		8D0DC1621E440A6C00E2BD47 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8D4FADF51E3EAF8C00573ED9 /* iOrganized.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOrganized.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4FADF81E3EAF8C00573ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D4FADFA1E3EAF8C00573ED9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				8D059D331E4033BA00B268EA /* NetworkingSerivices.swift */,
+				8D0DC1621E440A6C00E2BD47 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				8D4FADFB1E3EAF8C00573ED9 /* ViewController.swift in Sources */,
 				8D4FAE0F1E3EB58800573ED9 /* SignUpTableViewController.swift in Sources */,
 				8D4FADF91E3EAF8C00573ED9 /* AppDelegate.swift in Sources */,
+				8D0DC1631E440A6C00E2BD47 /* User.swift in Sources */,
 				8D4FAE151E3ECCDE00573ED9 /* ListTableViewController.swift in Sources */,
 				8D4FAE111E3EB5BD00573ED9 /* ResetViewController.swift in Sources */,
 				8D059D341E4033BA00B268EA /* NetworkingSerivices.swift in Sources */,

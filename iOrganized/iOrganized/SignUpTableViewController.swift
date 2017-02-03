@@ -18,7 +18,7 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
 
     var countriesArray = [String]()
     var pickerView = UIPickerView()
-    
+    var networkingServices = NetworkingService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -117,6 +117,10 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
     }
     
     @IBAction func signUpButton(_ sender: Any) {
+        
+        let data = UIImageJPEGRepresentation(userImageView.image!, 0.8)
+        
+        networkingServices.signUp(email: emailTxtFiel.text!, username: userNameTxtField.text!, password: passwordTxtField.text!, location: locationTxtfield.text!, data: data!)
     }
     
 }
