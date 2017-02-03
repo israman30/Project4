@@ -341,13 +341,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="65s-53-zRw">
                                 <rect key="frame" x="16" y="123" width="343" height="321"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TTR-sN-rlS">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter email" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TTR-sN-rlS">
                                         <rect key="frame" x="16" y="83" width="311" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
@@ -367,6 +367,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="resetPasswordButton:" destination="wRp-lS-2jv" eventType="touchUpInside" id="jNU-pa-w8g"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8p-FJ-bSE">
                                         <rect key="frame" x="16" y="203" width="311" height="40"/>
@@ -410,6 +413,9 @@
                             <constraint firstItem="65s-53-zRw" firstAttribute="centerY" secondItem="65i-SB-zeY" secondAttribute="centerY" constant="-50" id="vPm-Yt-tMe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resetPasswordTxtField" destination="TTR-sN-rlS" id="JTG-Uw-0hA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaz-c0-qnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dGe-i0-OQ0" userLabel="Exit" sceneMemberID="exit"/>
@@ -426,7 +432,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="142" id="ERr-Tr-JDL">
-                                <rect key="frame" x="0.0" y="56" width="375" height="142"/>
+                                <rect key="frame" x="0.0" y="55" width="375" height="143"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ERr-Tr-JDL" id="S07-ze-503">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
@@ -585,7 +591,7 @@
         <!--Profile-->
         <scene sceneID="6Cp-Li-JGR">
             <objects>
-                <viewController storyboardIdentifier="Main" id="BHc-bo-949" customClass="MyProfileViewController" customModule="iOrganized" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BHc-bo-949" customClass="MyProfileViewController" customModule="iOrganized" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="83r-bf-Bx9"/>
                         <viewControllerLayoutGuide type="bottom" id="5pc-uE-iN7"/>

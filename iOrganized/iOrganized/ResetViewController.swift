@@ -10,6 +10,9 @@ import UIKit
 
 class ResetViewController: UIViewController {
 
+    @IBOutlet weak var resetPasswordTxtField: UITextField!
+    
+    let networkingServices = NetworkingService()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,4 +23,10 @@ class ResetViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func resetPasswordButton(_ sender: Any) {
+        
+        networkingServices.resetPasswrod(email: resetPasswordTxtField.text!)
+    }
+    
 }

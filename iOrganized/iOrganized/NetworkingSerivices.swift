@@ -92,7 +92,20 @@ struct NetworkingService {
     
     }
     
+    //MARK: reset password
+    func resetPasswrod(email: String){
+        
+        FIRAuth.auth()?.sendPasswordReset(withEmail: email, completion: { (error) in
+            if error == nil {
+                print("An email to explain how to reset password has been sent to you. Thank you!")
+            } else {
+                
+                print(error!.localizedDescription)
+            
+            }
+        })
     
+    }
     
     
     
