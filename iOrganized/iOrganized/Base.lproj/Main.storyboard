@@ -321,7 +321,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1276" y="139"/>
+            <point key="canvasLocation" x="911" y="139"/>
         </scene>
         <!--Reset View Controller-->
         <scene sceneID="pWW-Lr-H7C">
@@ -420,7 +420,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaz-c0-qnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dGe-i0-OQ0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1957.5999999999999" y="151.57421289355324"/>
+            <point key="canvasLocation" x="1652" y="139"/>
         </scene>
         <!--iO-->
         <scene sceneID="eUx-N6-nGF">
@@ -484,7 +484,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wdu-hg-G0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1114" y="996"/>
+            <point key="canvasLocation" x="1170" y="845"/>
         </scene>
         <!--Description Table View Controller-->
         <scene sceneID="fMy-ND-ZCu">
@@ -557,7 +557,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cZ-fs-szo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1890" y="987"/>
+            <point key="canvasLocation" x="1905" y="845"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5vK-nn-foR">
@@ -576,7 +576,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="67w-13-jjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="444" y="987"/>
+            <point key="canvasLocation" x="438" y="844"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="LTZ-rf-aXh">
@@ -594,7 +594,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NBl-KM-1we" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-262" y="987"/>
+            <point key="canvasLocation" x="-316" y="844"/>
         </scene>
         <!--Profile-->
         <scene sceneID="6Cp-Li-JGR">
@@ -608,9 +608,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder-user" translatesAutoresizingMaskIntoConstraints="NO" id="5PY-NJ-egP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgorund" translatesAutoresizingMaskIntoConstraints="NO" id="93u-PA-BFI">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5PY-NJ-egP">
                                 <rect key="frame" x="117" y="72" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2484132349" green="0.57395762210000001" blue="0.75405180449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="64"/>
@@ -630,24 +635,24 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SKX-iz-7BO">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SKX-iz-7BO">
                                 <rect key="frame" x="82" y="219" width="211" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d9C-0U-dd4">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d9C-0U-dd4">
                                 <rect key="frame" x="82" y="250" width="211" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MCv-4L-RlY">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MCv-4L-RlY">
                                 <rect key="frame" x="82" y="281" width="211" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -663,7 +668,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="email" destination="MCv-4L-RlY" id="uKD-yq-BrA"/>
-                        <outlet property="password" destination="d9C-0U-dd4" id="jkp-Nf-Sxq"/>
+                        <outlet property="location" destination="d9C-0U-dd4" id="EN3-AL-nVC"/>
                         <outlet property="userPhotoImage" destination="5PY-NJ-egP" id="87X-dP-Qgc"/>
                         <outlet property="username" destination="SKX-iz-7BO" id="hg3-ba-abH"/>
                     </connections>

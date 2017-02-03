@@ -18,7 +18,7 @@ class MyProfileViewController: UIViewController {
     
     @IBOutlet weak var username: UITextField!
     
-    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var location: UITextField!
 
     @IBOutlet weak var email: UITextField!
     
@@ -46,6 +46,7 @@ class MyProfileViewController: UIViewController {
                 let user = User(snapshot: snapshot)
                 self.username.text = user.username
                 self.email.text = user.email
+                self.location.text = user.location
                 let imageUrl = String(user.photoUrl)
                 
                 self.storageRef.reference(forURL: imageUrl!).data(withMaxSize: 1 * 1024 * 1024, completion: { (data, error) in
