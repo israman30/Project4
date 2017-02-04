@@ -645,11 +645,13 @@
             </objects>
             <point key="canvasLocation" x="2390" y="1130"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--List-->
         <scene sceneID="5vK-nn-foR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wxI-rT-udZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="mUS-4l-dO6"/>
+                    <tabBarItem key="tabBarItem" title="List" image="Edit Property_000000_50" id="mUS-4l-dO6">
+                        <inset key="imageInsets" minX="5" minY="9" maxX="5" maxY="2"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="r4F-X0-HZl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -771,11 +773,13 @@
             </objects>
             <point key="canvasLocation" x="416.80000000000001" y="1564.7676161919042"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Profile-->
         <scene sceneID="qF5-xo-r2e">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="avp-uv-gP8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="Vre-rS-hN8"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Gender Neutral User_000000_50" id="Vre-rS-hN8">
+                        <inset key="imageInsets" minX="4" minY="8" maxX="4" maxY="2"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wO9-5i-Txu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -796,6 +800,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Edit Property_000000_50" width="50" height="50"/>
+        <image name="Gender Neutral User_000000_50" width="50" height="50"/>
         <image name="backgorund" width="640" height="1136"/>
     </resources>
 </document>
