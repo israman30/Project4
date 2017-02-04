@@ -22,7 +22,8 @@ struct NetworkingService {
     }
     
     // MARK: 3.- Saving userinfo in database
-    private func saveInfo(user: FIRUser, username: String, password:String, location: String){
+    private func saveInfo(user: FIRUser! , username: String, password:String, location: String){
+        
         let userInfo = ["email":user.email, "username": username, "location":location, "uid":user.uid, "photoUrl":String(describing: user.photoURL!)]
         
         let userRef = dataBaseRef.child("users").child(user.uid)
@@ -46,22 +47,22 @@ struct NetworkingService {
     }
     
     // MARK: 2.- set user info
-    private func setUserInfo(user: FIRUser, username: String, password:String, location: String, data: Data!){
+    private func setUserInfo(user: FIRUser!, username: String, password:String, location: String, data: Data!){
         
-        let imagePath = "profilImage\(user.uid)/userPic.jpg"
+        let imagePath = "profileImage\(user.uid)/userPic.jpg"
         
         let imageRef = storageRef.child(imagePath)
         
         let metaData = FIRStorageMetadata()
         
-        metaData .contentType = "image/jpg"
+        metaData.contentType = "image/jpg"
         
         imageRef.put(data, metadata: metaData) { (metaData, error) in
             if error == nil {
                 
                 let changeRequest = user.profileChangeRequest()
                 changeRequest.displayName = username
-                changeRequest.photoURL =  metaData!.downloadURL()
+                changeRequest.photoURL = metaData!.downloadURL()
                 changeRequest.commitChanges(completion: { (error) in
                     if error == nil {
                         

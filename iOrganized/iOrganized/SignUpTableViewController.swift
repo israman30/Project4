@@ -119,7 +119,7 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
     
     func imagePickercontroller(picker: UIImagePickerController, didFinishPickingImage image: UIImage,editingInfo: [String:AnyObject]?) {
         self.dismiss(animated: true, completion: nil)
-        self.userImageView.image = image
+        self.userImageView.image! = image
     }
     
     @IBAction func signUpButton(_ sender: Any) {

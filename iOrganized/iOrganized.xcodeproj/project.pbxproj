@@ -191,7 +191,7 @@
 				TargetAttributes = {
 					8D4FADF41E3EAF8C00573ED9 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 6DC9LP75VX;
+						DevelopmentTeam = G9TBJCK73T;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -415,7 +415,7 @@
 			baseConfigurationReference = 527AD971EB23A4695A248277 /* Pods-iOrganized.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6DC9LP75VX;
+				DEVELOPMENT_TEAM = G9TBJCK73T;
 				INFOPLIST_FILE = iOrganized/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.inclass.iOrganized;
@@ -429,7 +429,7 @@
 			baseConfigurationReference = AC07B4146015B6B684995EC6 /* Pods-iOrganized.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6DC9LP75VX;
+				DEVELOPMENT_TEAM = G9TBJCK73T;
 				INFOPLIST_FILE = iOrganized/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.inclass.iOrganized;
