@@ -34,6 +34,7 @@ class MyProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //MARK: Here the info will be retreivied from database
         if FIRAuth.auth()?.currentUser == nil {
             
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Login")
@@ -77,6 +78,7 @@ class MyProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: log out button
     @IBAction func logOutButton(_ sender: Any) {
         
         if FIRAuth.auth()?.currentUser != nil {

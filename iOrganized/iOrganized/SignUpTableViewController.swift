@@ -11,13 +11,19 @@ import UIKit
 class SignUpTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var userImageView: UIImageView!
+    
     @IBOutlet weak var userNameTxtField: UITextField!
+    
     @IBOutlet weak var emailTxtFiel: UITextField!
+    
     @IBOutlet weak var passwordTxtField: UITextField!
+    
     @IBOutlet weak var locationTxtfield: UITextField!
 
     var countriesArray = [String]()
+    
     var pickerView = UIPickerView()
+    
     var networkingServices = NetworkingService()
     
     override func viewDidLoad() {

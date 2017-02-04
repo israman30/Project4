@@ -24,6 +24,7 @@ class ResetViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK: Reset the password with email
     @IBAction func resetPasswordButton(_ sender: Any) {
         
         networkingServices.resetPasswrod(email: resetPasswordTxtField.text!)

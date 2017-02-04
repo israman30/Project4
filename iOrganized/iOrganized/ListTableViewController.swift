@@ -21,6 +21,7 @@ class ListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //MARK: Here is checking if user is loged in or go back to log in page
         if FIRAuth.auth()?.currentUser == nil {
             
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Login")
@@ -48,12 +49,7 @@ class ListTableViewController: UITableViewController {
         }
     }
     
-    // MARK: - Table view data source
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return
-//    }
-
+    //MARK: delegates and data source functions
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return listArray.count
@@ -72,11 +68,12 @@ class ListTableViewController: UITableViewController {
         return cell
     }
     
+    // MARK: Deleting cell: First from data base then from iOS
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
-            listArray.remove(at: indexPath.row)
             let ref = listArray[indexPath.row].ref
-            ref?.removeValue()
+            ref!.removeValue()
+            listArray.remove(at: indexPath.row)
             
             tableView.deleteRows(at: [indexPath], with: .fade)
         }

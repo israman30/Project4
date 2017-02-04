@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     
     @IBOutlet weak var password: UITextField!
+    
     let networkingServices = NetworkingService()
 
     override func viewDidLoad() {
