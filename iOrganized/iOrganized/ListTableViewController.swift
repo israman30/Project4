@@ -79,8 +79,18 @@ class ListTableViewController: UITableViewController {
         }
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "updateInfo", sender: self)
+    }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "updateInfo" {
+            let vc = segue.destination as! UpdateTableViewController
+            let indexPath = tableView.indexPathForSelectedRow!
+            vc.todo = listArray[indexPath.row]
+        }
+    }
     
     
     
