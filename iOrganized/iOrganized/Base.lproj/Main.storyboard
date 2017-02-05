@@ -25,7 +25,7 @@
                                 <rect key="frame" x="16" y="139" width="343" height="321"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black" translatesAutoresizingMaskIntoConstraints="NO" id="TI2-Ml-dFL">
-                                        <rect key="frame" x="-16" y="-139" width="375" height="633"/>
+                                        <rect key="frame" x="-16" y="-139" width="375" height="667"/>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter email" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NXE-49-dmU">
                                         <rect key="frame" x="16" y="42" width="311" height="40"/>
@@ -90,7 +90,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="TI2-Ml-dFL" secondAttribute="bottom" constant="-173" id="96P-1v-XF9"/>
+                                    <constraint firstAttribute="bottom" secondItem="TI2-Ml-dFL" secondAttribute="bottom" constant="-207" id="96P-1v-XF9"/>
                                     <constraint firstItem="TI2-Ml-dFL" firstAttribute="leading" secondItem="EhV-UW-m4A" secondAttribute="leading" constant="-16" id="EGa-pP-uzf"/>
                                     <constraint firstAttribute="height" constant="321" id="OE2-eh-Rvy"/>
                                     <constraint firstItem="TI2-Ml-dFL" firstAttribute="top" secondItem="EhV-UW-m4A" secondAttribute="top" constant="-139" id="TSR-LG-6TM"/>
