@@ -293,6 +293,7 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="signUpButton:" destination="EWQ-BA-mOm" eventType="touchUpInside" id="PQT-kT-XSM"/>
+                                                        <segue destination="zRB-hK-NgZ" kind="unwind" unwindAction="unwindToLoginWithStoryboard:" id="POk-10-TJQ"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
