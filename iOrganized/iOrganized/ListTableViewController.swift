@@ -21,6 +21,7 @@ class ListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         //MARK: Here is checking if user is loged in or go back to log in page
         if FIRAuth.auth()?.currentUser == nil {
             
@@ -59,6 +60,7 @@ class ListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListOfTableViewCell
         
         let display = listArray[indexPath.row]
+        
         
         cell.usernameLabel.text = display.username
         cell.titleLabel.text = display.title

@@ -29,9 +29,9 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        emailTxtFiel.backgroundColor = .clear
-        emailTxtFiel.layer.cornerRadius = 5
-        emailTxtFiel.layer.borderWidth = 1
+        userImageView.backgroundColor = .clear
+        userImageView.layer.cornerRadius = 92.5
+        userImageView.layer.borderWidth = 1
 //        loginButtonOutlet.layer.borderColor = UIColor.white.cgColor
         
         // This loop will get the countries from Locale apple property

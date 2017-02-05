@@ -60,23 +60,17 @@ class MyProfileViewController: UIViewController {
                         if let data = data {
                             
                             self.userPhotoImage.image = UIImage(data: data)
-                        
                         }
                     }
                 })
-            }
+             }
             
         }) { (error) in
             print(error.localizedDescription)
         }
-
-       }
+      }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     // MARK: log out button
     @IBAction func logOutButton(_ sender: Any) {

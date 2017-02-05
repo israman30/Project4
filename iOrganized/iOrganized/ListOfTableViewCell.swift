@@ -18,5 +18,7 @@ class ListOfTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         colorView.layer.cornerRadius = 15
+        descriptionLabel.layer.cornerRadius = 5
+        descriptionLabel.layer.borderWidth = 1
     }
 }
