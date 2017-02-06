@@ -43,7 +43,6 @@ struct ToDo {
         self.blue = snapshotValue["blue"] as! CGFloat
         self.green = snapshotValue["green"] as! CGFloat
         self.ref = snapshot.ref
-        
     }
     
     func toAnyObject() -> [String:Any]{

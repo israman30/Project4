@@ -129,6 +129,7 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
         
     }
     
+    //MARK: Action - sign up a new user
     @IBAction func signUpButton(_ sender: Any) {
         
         let data = UIImageJPEGRepresentation(userImageView.image!, 0.8)
