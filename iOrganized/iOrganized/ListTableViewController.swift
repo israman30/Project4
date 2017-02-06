@@ -17,11 +17,9 @@ class ListTableViewController: UITableViewController {
     
     var databaseRef: FIRDatabaseReference!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         //MARK: Here is checking if user is loged in or go back to log in page
         if FIRAuth.auth()?.currentUser == nil {
             
@@ -61,7 +59,6 @@ class ListTableViewController: UITableViewController {
         
         let display = listArray[indexPath.row]
         
-        
         cell.usernameLabel.text = display.username
         cell.titleLabel.text = display.title
         cell.descriptionLabel.text = display.content
@@ -80,13 +77,14 @@ class ListTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
-
+    
+    // MARK: perfom segue function
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "updateInfo", sender: self)
     }
     
+    // MARK: Prepare for segue function passing data from table view cell to description controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if segue.identifier == "updateInfo" {
             let vc = segue.destination as! UpdateTableViewController
             let indexPath = tableView.indexPathForSelectedRow!
@@ -96,6 +94,4 @@ class ListTableViewController: UITableViewController {
     
     
     
-    
- 
 }

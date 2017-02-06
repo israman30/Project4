@@ -29,6 +29,5 @@ struct User {
         photoUrl = snapshotValue["photoUrl"] as! String
         location = snapshotValue["location"] as! String
         ref = snapshot.ref
-    }
-    
+    }    
 }

@@ -61,7 +61,7 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
         self.view.endEditing(true)
     }
     
-    // MARK: Delages and data source Picker controller functions
+    // MARK: Delegates and data source Picker controller functions
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return countriesArray[row]
     }
@@ -81,10 +81,8 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
         return 1
     }
     
-    
     // MARK: Action Button that allows to use camera, photo library, save and cancel 
     @IBAction func choosePic(_ sender: Any) {
-        
         
         let pickerController = UIImagePickerController()
         pickerController.delegate = self

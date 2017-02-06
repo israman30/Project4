@@ -33,7 +33,6 @@ class UpdateTableViewController: UITableViewController {
     }
     
     // MARK: This action will update each descrition list
-    
     @IBAction func updateUserInfo(_ sender: Any) {
         
         let red = CGFloat(arc4random_uniform(UInt32(255.5)))/255.5
@@ -73,9 +72,7 @@ class UpdateTableViewController: UITableViewController {
         
         self.navigationController!.popToRootViewController(animated: true)
     
-        
     }
-    
     
     
     override func didReceiveMemoryWarning() {

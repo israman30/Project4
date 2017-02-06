@@ -21,7 +21,7 @@ struct NetworkingService {
         return FIRStorage.storage().reference()
     }
     
-    // MARK: 3.- Saving userinfo in database
+    // MARK: 3.- Saving user info in database
     private func saveInfo(user: FIRUser! , username: String, password:String, location: String){
         
         let userInfo = ["email":user.email, "username": username, "location":location, "uid":user.uid, "photoUrl":String(describing: user.photoURL!)]
@@ -92,7 +92,6 @@ struct NetworkingService {
                 print(error!.localizedDescription)
             }
         })
-    
     }
     
     //MARK: reset password
@@ -100,19 +99,16 @@ struct NetworkingService {
         
         FIRAuth.auth()?.sendPasswordReset(withEmail: email, completion: { (error) in
             if error == nil {
+                
                 print("An email to explain how to reset password has been sent to you. Thank you!")
+                
             } else {
                 
                 print(error!.localizedDescription)
             
             }
         })
-    
     }
-    
-    
-    
-    
     
     
     

@@ -41,8 +41,9 @@ struct Posts {
     
     func toAnyObject() -> [String:Any]{
         
-        return["postImageString": postImageString, "content":content, "username":username]
-        
+        return["postImageString": postImageString,
+               "content":content,
+               "username":username
+        ]
     }
-
 }

@@ -48,7 +48,12 @@ struct ToDo {
     
     func toAnyObject() -> [String:Any]{
     
-        return["title": title, "content":content, "username":username, "blue":blue, "red":red, "green":green]
-    
+        return["title": title,
+               "content":content,
+               "username":username,
+               "blue":blue,
+               "red":red,
+               "green":green
+        ]
     }
 }
