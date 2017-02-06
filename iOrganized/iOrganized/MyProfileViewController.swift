@@ -71,7 +71,6 @@ class MyProfileViewController: UIViewController {
       }
     }
 
-    
     // MARK: log out button
     @IBAction func logOutButton(_ sender: Any) {
         
@@ -86,7 +85,6 @@ class MyProfileViewController: UIViewController {
             } catch let error {
                 print(error.localizedDescription)
             }
-        
         }
     }
 }

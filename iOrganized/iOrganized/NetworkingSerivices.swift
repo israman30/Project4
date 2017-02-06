@@ -30,18 +30,20 @@ struct NetworkingService {
         userRef.setValue(userInfo)
     
         //siging in the user and saving info
-        signIn(email: user.email!, password: password)
+        signIn(email: user.email!, password: password, complete: {_ in})
     }
     
     //MARK: 4.- sign in the user
-    func signIn(email: String, password: String){
+    func signIn(email: String, password: String, complete: @escaping (Bool)->() ){
         FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
             if error == nil {
                 if let user = user {
                     print("\(user.displayName!) has signed in succesfully!")
+                    complete(true)
                 }
             } else {
                 print(error!.localizedDescription)
+                complete(false)
             }
         })
     }

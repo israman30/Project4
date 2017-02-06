@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         
         
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -34,12 +35,14 @@ class ViewController: UIViewController {
 
     @IBAction func logInButton(_ sender: Any) {
         
-        networkingServices.signIn(email: username.text!, password: password.text!)
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home")
-        present(vc, animated: true, completion: nil)
+        networkingServices.signIn(email: username.text!, password: password.text!, complete: { success in
+            if success {
+                DispatchQueue.main.async {
+                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home")
+                    self.present(vc, animated: true, completion: nil)
+                }
+            }
+        })
     }
-    
-    
-
 }
 

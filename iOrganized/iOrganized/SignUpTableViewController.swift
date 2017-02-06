@@ -84,6 +84,8 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
     
     // MARK: Action Button that allows to use camera, photo library, save and cancel 
     @IBAction func choosePic(_ sender: Any) {
+        
+        
         let pickerController = UIImagePickerController()
         pickerController.delegate = self
         pickerController.allowsEditing = true
@@ -117,16 +119,31 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
         present(alertController, animated: true, completion: nil)
     }
     
-    func imagePickercontroller(picker: UIImagePickerController, didFinishPickingImage image: UIImage,editingInfo: [String:AnyObject]?) {
+// MARK: This function pick the image from the photo library as String and pass it to UIImage vie in the iOS
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            userImageView.image = image
+        } else {
+            print("Image was not selected")
+        }
         self.dismiss(animated: true, completion: nil)
-        self.userImageView.image! = image
+        
     }
     
     @IBAction func signUpButton(_ sender: Any) {
         
         let data = UIImageJPEGRepresentation(userImageView.image!, 0.8)
         
-        networkingServices.signUp(email: emailTxtFiel.text!, username: userNameTxtField.text!, password: passwordTxtField.text!, location: locationTxtfield.text!, data: data!)
+        networkingServices.signUp(email: emailTxtFiel.text!,
+                                  username: userNameTxtField.text!,
+                                  password: passwordTxtField.text!,
+                                  location: locationTxtfield.text!,
+                                  data: data!)
     }
     
 }
+
+
+
+

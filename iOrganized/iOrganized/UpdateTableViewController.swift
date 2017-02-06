@@ -71,7 +71,7 @@ class UpdateTableViewController: UITableViewController {
         
         updateRef.updateChildValues(updatedTodo.toAnyObject())
         
-        self.navigationController?.popToRootViewController(animated: true)
+        self.navigationController!.popToRootViewController(animated: true)
     
         
     }
