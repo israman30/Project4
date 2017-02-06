@@ -30,7 +30,6 @@ class ResetViewController: UIViewController {
         networkingServices.resetPasswrod(email: resetPasswordTxtField.text!)
         emailResetAlert()
         
-        
     }
     
     func emailResetAlert(){
@@ -41,7 +40,6 @@ class ResetViewController: UIViewController {
             self.present(vc, animated: true, completion: nil)
         }))
         present(alert, animated: true, completion: nil)
-        
         
     }
     
