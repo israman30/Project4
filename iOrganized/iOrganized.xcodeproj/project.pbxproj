@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8D059D341E4033BA00B268EA /* NetworkingSerivices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D059D331E4033BA00B268EA /* NetworkingSerivices.swift */; };
+		8D05FAC41E497D1B00E16B8E /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D05FAC31E497D1B00E16B8E /* GoogleMapViewController.swift */; };
 		8D0DC1631E440A6C00E2BD47 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0DC1621E440A6C00E2BD47 /* User.swift */; };
 		8D4FADF91E3EAF8C00573ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FADF81E3EAF8C00573ED9 /* AppDelegate.swift */; };
 		8D4FADFB1E3EAF8C00573ED9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FADFA1E3EAF8C00573ED9 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 		527AD971EB23A4695A248277 /* Pods-iOrganized.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOrganized.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOrganized/Pods-iOrganized.debug.xcconfig"; sourceTree = "<group>"; };
 		8958F830AA62B01E0B735D3A /* Pods_iOrganized.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOrganized.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D059D331E4033BA00B268EA /* NetworkingSerivices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingSerivices.swift; sourceTree = "<group>"; };
+		8D05FAC31E497D1B00E16B8E /* GoogleMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
 		8D0DC1621E440A6C00E2BD47 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8D4FADF51E3EAF8C00573ED9 /* iOrganized.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOrganized.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4FADF81E3EAF8C00573ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				8D4FADF81E3EAF8C00573ED9 /* AppDelegate.swift */,
+				8D05FAC31E497D1B00E16B8E /* GoogleMapViewController.swift */,
 				8DA11A4A1E4792BD0040A546 /* Notes */,
 				8DA11A491E4792690040A546 /* ProfileVC */,
 				8DA11A421E4512940040A546 /* Outlets */,
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D05FAC41E497D1B00E16B8E /* GoogleMapViewController.swift in Sources */,
 				8D4FAE171E3ED27600573ED9 /* DescriptionTableViewController.swift in Sources */,
 				8DD3F9571E443A36003183EB /* ToDo.swift in Sources */,
 				8D4FADFB1E3EAF8C00573ED9 /* ViewController.swift in Sources */,
