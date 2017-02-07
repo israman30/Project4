@@ -661,7 +661,7 @@
                         <inset key="imageInsets" minX="5" minY="9" maxX="5" maxY="2"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="r4F-X0-HZl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r4F-X0-HZl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -793,7 +793,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2a-vs-srP">
                                 <rect key="frame" x="0.0" y="14" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="5zS-kj-yjp">
+                                    <navigationItem id="5zS-kj-yjp">
                                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="QRu-pK-qlg"/>
                                     </navigationItem>
                                 </items>
@@ -815,7 +815,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Locations" image="Marker_000000_50" selectedImage="Marker_000000_50" id="4sC-cF-zaz">
-                        <inset key="imageInsets" minX="4" minY="8" maxX="4" maxY="2"/>
+                        <inset key="imageInsets" minX="5" minY="9" maxX="5" maxY="3"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="googleMapView" destination="VHb-xf-R7D" id="Blg-t1-zgR"/>
