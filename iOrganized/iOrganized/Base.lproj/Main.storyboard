@@ -661,7 +661,7 @@
                         <inset key="imageInsets" minX="5" minY="9" maxX="5" maxY="2"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r4F-X0-HZl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="r4F-X0-HZl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -746,7 +746,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5PY-NJ-egP">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder-user" translatesAutoresizingMaskIntoConstraints="NO" id="5PY-NJ-egP">
                                 <rect key="frame" x="95" y="96" width="185" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2484132349" green="0.57395762210000001" blue="0.75405180449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -833,7 +833,7 @@
                         <inset key="imageInsets" minX="4" minY="8" maxX="4" maxY="2"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wO9-5i-Txu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wO9-5i-Txu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
