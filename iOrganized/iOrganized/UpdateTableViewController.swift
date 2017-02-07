@@ -32,6 +32,11 @@ class UpdateTableViewController: UITableViewController {
         
     }
     
+    // Dismiss keyboard when touch outside
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     // MARK: This action will update each descrition list
     @IBAction func updateUserInfo(_ sender: Any) {
         

@@ -31,8 +31,16 @@ class MyProfileViewController: UIViewController {
         return FIRStorage.storage()
     }
     
+    func displayImageShape(){
+        self.userPhotoImage.backgroundColor = .clear
+        self.userPhotoImage.layer.cornerRadius = 92.5
+        self.userPhotoImage.layer.borderWidth = 1
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        displayImageShape()
         
         //MARK: Here the info will be retreivied from database
         if FIRAuth.auth()?.currentUser == nil {

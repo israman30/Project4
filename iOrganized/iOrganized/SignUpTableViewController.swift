@@ -32,7 +32,7 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
         userImageView.backgroundColor = .clear
         userImageView.layer.cornerRadius = 92.5
         userImageView.layer.borderWidth = 1
-//        loginButtonOutlet.layer.borderColor = UIColor.white.cgColor
+        
         
         // This loop will get the countries from Locale apple property
         for code in Locale.isoRegionCodes {
@@ -58,6 +58,11 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
     
     // dismiss view controller after picker get call
     func dismissController(gesture: UIGestureRecognizer){
+        self.view.endEditing(true)
+    }
+    
+    // Dismiss keyboar when touches ousides
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     
