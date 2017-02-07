@@ -11,6 +11,8 @@ import Firebase
 import FirebaseAuth
 import FirebaseStorage
 import FirebaseDatabase
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        GMSServices.provideAPIKey("AIzaSyAKlVsdq_MerpDGjwnJvUTUMH95cyPd2I4")
+        GMSPlacesClient.provideAPIKey("AIzaSyAKlVsdq_MerpDGjwnJvUTUMH95cyPd2I4")
+        
         application.statusBarStyle = .lightContent
         FIRApp.configure()
         FIRDatabase.database().persistenceEnabled = true
