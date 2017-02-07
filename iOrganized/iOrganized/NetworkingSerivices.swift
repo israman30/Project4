@@ -24,7 +24,12 @@ struct NetworkingService {
     // MARK: 3.- Saving user info in database
     private func saveInfo(user: FIRUser! , username: String, password:String, location: String){
         
-        let userInfo = ["email":user.email, "username": username, "location":location, "uid":user.uid, "photoUrl":String(describing: user.photoURL!)]
+        let userInfo = ["email":user.email,
+                        "username": username,
+                        "location":location,
+                        "uid":user.uid,
+                        "photoUrl":String(describing: user.photoURL!)
+        ]
         
         let userRef = dataBaseRef.child("users").child(user.uid)
         userRef.setValue(userInfo)

@@ -34,7 +34,7 @@ class SignUpTableViewController: UITableViewController, UIImagePickerControllerD
         userImageView.layer.borderWidth = 1
         
         
-        // This loop will get the countries from Locale apple property
+        //MARK: Location: This loop will get the countries from Locale apple property
         for code in Locale.isoRegionCodes {
             let country = Locale.current.localizedString(forRegionCode: code)!
             print(code)
