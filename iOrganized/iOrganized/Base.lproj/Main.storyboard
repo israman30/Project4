@@ -794,7 +794,11 @@
                                 <rect key="frame" x="0.0" y="14" width="375" height="44"/>
                                 <items>
                                     <navigationItem id="5zS-kj-yjp">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="QRu-pK-qlg"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="QRu-pK-qlg">
+                                            <connections>
+                                                <action selector="searchLocations:" destination="QhJ-6S-HfA" id="KVQ-TP-1Re"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
