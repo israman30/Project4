@@ -769,9 +769,7 @@
         <scene sceneID="5vK-nn-foR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wxI-rT-udZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="List" image="Edit Property_000000_50" id="mUS-4l-dO6">
-                        <inset key="imageInsets" minX="5" minY="9" maxX="5" maxY="2"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="List" image="list" id="mUS-4l-dO6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="r4F-X0-HZl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -932,7 +930,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2a-vs-srP">
                                 <rect key="frame" x="0.0" y="14" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Search Where I am or go?" id="5zS-kj-yjp">
+                                    <navigationItem title="Search" id="5zS-kj-yjp">
                                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="QRu-pK-qlg">
                                             <connections>
                                                 <action selector="searchLocations:" destination="QhJ-6S-HfA" id="KVQ-TP-1Re"/>
@@ -957,9 +955,7 @@
                             <constraint firstItem="VHb-xf-R7D" firstAttribute="top" secondItem="i2a-vs-srP" secondAttribute="bottom" id="xlh-U2-lCA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Locations" image="Marker_000000_50" id="4sC-cF-zaz">
-                        <inset key="imageInsets" minX="5" minY="9" maxX="5" maxY="3"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Locations" image="Marker" id="4sC-cF-zaz"/>
                     <connections>
                         <outlet property="googleMapView" destination="VHb-xf-R7D" id="Blg-t1-zgR"/>
                     </connections>
@@ -972,9 +968,7 @@
         <scene sceneID="qF5-xo-r2e">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="avp-uv-gP8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="Gender Neutral User_000000_50" id="Vre-rS-hN8">
-                        <inset key="imageInsets" minX="4" minY="8" maxX="4" maxY="2"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="Vre-rS-hN8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wO9-5i-Txu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1012,10 +1006,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Edit Property_000000_50" width="50" height="50"/>
-        <image name="Gender Neutral User_000000_50" width="50" height="50"/>
-        <image name="Marker_000000_50" width="50" height="50"/>
+        <image name="Marker" width="25" height="25"/>
+        <image name="Profile" width="25" height="25"/>
         <image name="black" width="183" height="275"/>
+        <image name="list" width="25" height="25"/>
         <image name="placeholder-user" width="600" height="600"/>
     </resources>
 </document>
