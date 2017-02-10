@@ -49,13 +49,15 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
         marker.appearAnimation = kGMSMarkerAnimationPop
         
     }
-    
+    // MARK: drop a pin on any location
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
         print("You tapped at \(coordinate.latitude), \(coordinate.longitude)")
         googleMapView.clear()
         let marker = GMSMarker(position: coordinate)
         marker.map = googleMapView
+        marker.appearAnimation = kGMSMarkerAnimationPop
     }
+    
     //MARK: Location manager delegate functions
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error while get location \(error)")
@@ -68,6 +70,7 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
         
         self.googleMapView.animate(to: camera)
         self.locationManager.stopUpdatingLocation()
+        
     }
     
     //MARK: GMSMapView delegate
@@ -99,6 +102,7 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
         self.dismiss(animated: true, completion: nil)
     }
     
+    //MARK: action.- search location with auto complete
     @IBAction func searchLocations(_ sender: UIBarButtonItem) {
         
         let autoCompleteController = GMSAutocompleteViewController()
