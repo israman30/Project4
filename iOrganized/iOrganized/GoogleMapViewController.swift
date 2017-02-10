@@ -27,11 +27,10 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
         
         initGoogleMaps()
 
-        
     }
     
     func initGoogleMaps(){
-        
+        // get camera position
         let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.isMyLocationEnabled = true
@@ -43,10 +42,11 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
         
         // Marker place
         let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
+        marker.position = CLLocationCoordinate2DMake(-33.86, 151.20)
         marker.title = "Sydney"
         marker.snippet = "Australia"
         marker.map = mapView
+        marker.appearAnimation = kGMSMarkerAnimationPop
         
     }
     
