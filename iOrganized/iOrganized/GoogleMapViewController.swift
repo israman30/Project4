@@ -40,41 +40,34 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
         self.googleMapView.isMyLocationEnabled = true
         self.googleMapView.settings.myLocationButton = true
         
-        // Marker place
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2DMake(-33.86, 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
-        marker.appearAnimation = kGMSMarkerAnimationPop
-        
     }
-    // MARK: drop a pin on any location
+    
+     //MARK: drop a pin on any location
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
         print("You tapped at \(coordinate.latitude), \(coordinate.longitude)")
         googleMapView.clear()
         let marker = GMSMarker(position: coordinate)
         marker.map = googleMapView
+        marker.title = "\(marker.title)"
         marker.appearAnimation = kGMSMarkerAnimationPop
     }
+    
     
     //MARK: Location manager delegate functions
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error while get location \(error)")
     }
     
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last
-        
         let camera = GMSCameraPosition.camera(withLatitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!, zoom: 17.0)
-        
         self.googleMapView.animate(to: camera)
         self.locationManager.stopUpdatingLocation()
         
     }
     
     //MARK: GMSMapView delegate
-    
     func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
         self.googleMapView.isMyLocationEnabled = true
     }
@@ -87,7 +80,6 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
     }
     
     //MARK: Autocomplete delegate
-    
     func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
         let camera = GMSCameraPosition.camera(withLatitude: place.coordinate.latitude, longitude: place.coordinate.longitude, zoom: 15.0)
         self.googleMapView.camera = camera
@@ -101,6 +93,7 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
     func wasCancelled(_ viewController: GMSAutocompleteViewController) {
         self.dismiss(animated: true, completion: nil)
     }
+    
     
     //MARK: action.- search location with auto complete
     @IBAction func searchLocations(_ sender: UIBarButtonItem) {
