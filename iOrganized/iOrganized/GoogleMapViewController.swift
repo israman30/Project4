@@ -50,6 +50,12 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
         
     }
     
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        print("You tapped at \(coordinate.latitude), \(coordinate.longitude)")
+        googleMapView.clear()
+        let marker = GMSMarker(position: coordinate)
+        marker.map = googleMapView
+    }
     //MARK: Location manager delegate functions
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error while get location \(error)")
