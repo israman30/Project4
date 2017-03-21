@@ -1,9 +1,11 @@
 ##Project 4 "iO"
+
 #Research Plan Worksheet 
 
 ###General people interviewed
 
 ##Author
+
 ###Israel Manzo
 iOSI at General Assembly
 
@@ -98,8 +100,11 @@ Todoist         | App Store   | No         |    Yes       |
 
 ##Problem statement worksheet
 ![Alt Image Text](images/Screen-Shot-might.png)
+
 ![Alt Image Text](images/Screen-Shot-statement.png)
+
 ##Priorities features
+
 * To do list
 
 * Check out lists
@@ -115,6 +120,7 @@ Todoist         | App Store   | No         |    Yes       |
 * List of priorities
 
 ##Wireframe Screenshot
+
 ![Alt Image Text](images/Screen-Shot.png)
 
 
