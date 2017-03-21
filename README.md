@@ -1,12 +1,11 @@
-##Project 4 "iO"
+## Project 4 "iO"
 
-#Research Plan Worksheet 
+ 
+### General people interviewed
 
-###General people interviewed
+## Author
 
-##Author
-
-###Israel Manzo
+### Israel Manzo
 iOSI at General Assembly
 
 *New York, NY*
@@ -19,7 +18,7 @@ Date: January 30, 2017
 
 - Interviewing with a couple of my classmates I find out an organization issue on how to get to places and keep on track the solutions and list of ideas that could help. From this came the idea of a to-do list friendly app, in addition to some more features to get the app more helpful for the user experience.
 
-##Research questions
+## Research questions
 The are questions that need to be answered at the end of this project.
 
 * How this app help to resolve the user organization?
@@ -32,17 +31,17 @@ The are questions that need to be answered at the end of this project.
 
 * What can be changed to make this app better?
 
-##Methodology
+## Methodology
 From now on we will be working on creating the interface of this app easy for the user experience. For the next week, features will be developed and added.
 
-##Target
+## Target
 * The first user is a busy person, mother, wife and same time student with a busy schedule she is trying to get organized and follow up on her/his duties.
 
 * The second user is a student, young guy, single and only going to school.., but he needs to keep on track his homework and assignments during the day and also he has campuses in different directions and he needs to get to both of them.
 
-#####Results will be updated when the app is avaliable to use.
+##### Results will be updated when the app is avaliable to use.
 
-##List of topics as audience
+## List of topics as audience
 * How to organize me
 
 * List of my duties
@@ -53,18 +52,18 @@ From now on we will be working on creating the interface of this app easy for th
 
 * Sharing my notes with friends or social media
 
-#####How can I organize myself having a list of duties to do and check them out or delete them after are done? 
+##### How can I organize myself having a list of duties to do and check them out or delete them after are done? 
 
 ___________
 -----------
 
-##Persona
+## Persona
 ![Alt Image Text](images/persona.jpg)
-##Search highlights
+## Search highlights
 ![Alt Image Text](images/research.png)
 
-##User stories
-####Lim Yuan
+## User stories
+#### Lim Yuan
 * Mother
 
 * Wife
@@ -75,7 +74,7 @@ Lim is a busy person that need a better way to organize her duties as a mother a
 
 We will support Lim with a an application that helps her to organize her duties also to get directed in shorter time where she has to be and how.
 
-####Matt Lucas
+#### Matt Lucas
 * Student
 
 * Working part time
@@ -87,7 +86,7 @@ Matt needs to travel from campuses to get into different class topics. After cla
 --------------
 --------------
 
-##Competitive analysis table
+## Competitive analysis table
 
 Competitors     | Website     | Auths      |  Friendly UI | 
 ----------------|-------------|------------|--------------|
@@ -98,13 +97,13 @@ Do!             | App Store   | Yes        |    Yes       |
 Wonderlist      | App Store   | Yes        |    No        |
 Todoist         | App Store   | No         |    Yes       |
 
-##Problem statement worksheet
+## Problem statement worksheet
 
 ![Alt Image Text](images/Screen-Shot-might.png)
 
 ![Alt Image Text](images/Screen-Shot-statement.png)
 
-##Priorities features
+## Priorities features
 
 * To do list
 
@@ -120,29 +119,29 @@ Todoist         | App Store   | No         |    Yes       |
 
 * List of priorities
 
-##Wireframe Screenshot
+## Wireframe Screenshot
 
 ![Alt Image Text](images/Screen-Shot.png)
 
-##App screenshots
+## App screenshots
 
-##User Log in View
+## User Log in View
 
 ![Alt Image Text](images/LoginScreenShot.png)
 
-##User Sign UP View
+## User Sign UP View
 
 ![Alt Image Text](images/SignupScreenShot.png)
 
-##User Main List of Taks
+## User Main List of Taks
 
 ![Alt Image Text](images/ListScreenShot.png)
 
-##Profile User View
+## Profile User View
 
 ![Alt Image Text](images/ProfileScreenShot.png)
 
-##Map View wth user location
+## Map View wth user location
 
 ![Alt Image Text](images/MapScreenShot.png)
 
