@@ -19,6 +19,69 @@ Date: January 30, 2017
 
 - Interviewing with a couple of my classmates I find out an organization issue on how to get to places and keep on track the solutions and list of ideas that could help. From this came the idea of a to-do list friendly app, in addition to some more features to get the app more helpful for the user experience.
 
+
+
+## Competitive analysis table
+
+Competitors     | Website     | Auths      |  Friendly UI | 
+----------------|-------------|------------|--------------|
+Do.List         | App Store   | Yes        |    Yes       |
+Notes           | App Store   | No         |    No        |
+Productivity    | App Store   | Yes        |    No        |
+Do!             | App Store   | Yes        |    Yes       |
+Wonderlist      | App Store   | Yes        |    No        |
+Todoist         | App Store   | No         |    Yes       |
+
+## Priorities features
+
+* To do list
+
+* Check out lists
+
+* Delete or edit a task
+
+* Location of place where task will be done
+
+* Sharing options
+
+* Search for lists
+
+* List of priorities
+
+## Pods used
+```
+pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
+  pod 'GoogleMaps', '~> 2.1'
+  pod 'GooglePlaces'
+```
+
+## Wireframe Screenshot
+
+![Alt Image Text](images/Screen-Shot.png)
+
+## App screenshots
+
+## User Log in View
+
+![Alt Image Text](images/LoginScreenShot.png)
+
+## User Main List of Taks
+
+![Alt Image Text](images/ListScreenShot.png)
+
+## Profile User View
+
+![Alt Image Text](images/ProfileScreenShot.png)
+
+## Map View wth user location
+
+![Alt Image Text](images/MapScreenShot.png)
+![Alt Image Text](images/MapSearchScreenShot.png)
+
+
 ## Research questions
 The are questions that need to be answered at the end of this project.
 
@@ -85,18 +148,6 @@ Matt is a young student that is almost ready to graduate from college and he has
 Matt needs to travel from campuses to get into different class topics. After class, he has to go to work in customer services. This will give him some cash to pay rent and food but he needs a way how he can keep on track what he has to do in a daily basis with school and work. Also, he needs to get to places but he is not too familiar with the city or with directions.
 
 --------------
---------------
-
-## Competitive analysis table
-
-Competitors     | Website     | Auths      |  Friendly UI | 
-----------------|-------------|------------|--------------|
-Do.List         | App Store   | Yes        |    Yes       |
-Notes           | App Store   | No         |    No        |
-Productivity    | App Store   | Yes        |    No        |
-Do!             | App Store   | Yes        |    Yes       |
-Wonderlist      | App Store   | Yes        |    No        |
-Todoist         | App Store   | No         |    Yes       |
 
 ## Problem statement worksheet
 
@@ -104,44 +155,8 @@ Todoist         | App Store   | No         |    Yes       |
 
 ![Alt Image Text](images/Screen-Shot-statement.png)
 
-## Priorities features
 
-* To do list
 
-* Check out lists
-
-* Delete or edit a task
-
-* Location of place where task will be done
-
-* Sharing options
-
-* Search for lists
-
-* List of priorities
-
-## Wireframe Screenshot
-
-![Alt Image Text](images/Screen-Shot.png)
-
-## App screenshots
-
-## User Log in View
-
-![Alt Image Text](images/LoginScreenShot.png)
-
-## User Main List of Taks
-
-![Alt Image Text](images/ListScreenShot.png)
-
-## Profile User View
-
-![Alt Image Text](images/ProfileScreenShot.png)
-
-## Map View wth user location
-
-![Alt Image Text](images/MapScreenShot.png)
-![Alt Image Text](images/MapSearchScreenShot.png)
 
 
 
