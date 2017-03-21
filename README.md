@@ -128,23 +128,23 @@ Todoist         | App Store   | No         |    Yes       |
 
 ##User Log in View
 
-![Alt Image Text](images/login.png)
+![Alt Image Text](images/LoginScreenShot.png)
 
 ##User Sign UP View
 
-![Alt Image Text](images/signup.png)
+![Alt Image Text](images/SignupScreenShot.png)
 
 ##User Main List of Taks
 
-![Alt Image Text](images/main.png)
+![Alt Image Text](images/ListScreenShot.png)
 
 ##Profile User View
 
-![Alt Image Text](images/profile.png)
+![Alt Image Text](images/ProfileScreenShot.png)
 
 ##Map View wth user location
 
-![Alt Image Text](images/map.png)
+![Alt Image Text](images/MapScreenShot.png)
 
 
 
