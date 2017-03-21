@@ -1,10 +1,7 @@
-## iO App
+# iO App
 
-# Research Plan Worksheet 
 
-### General people interviewed
-
-## Author
+##### By
 
 ### Israel Manzo
 iOSI at General Assembly
@@ -81,6 +78,8 @@ pod 'Firebase/Core'
 ![Alt Image Text](images/MapScreenShot.png)
 ![Alt Image Text](images/MapSearchScreenShot.png)
 
+
+# Research Plan Worksheet 
 
 ## Research questions
 The are questions that need to be answered at the end of this project.
