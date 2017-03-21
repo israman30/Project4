@@ -1,4 +1,4 @@
-## Project 4 "iO"
+## iO App
 
 # Research Plan Worksheet 
 
