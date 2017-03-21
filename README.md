@@ -128,11 +128,11 @@ Todoist         | App Store   | No         |    Yes       |
 
 ##User Log in View
 
-![Alt Image](images/login.png)
+![Alt Image Text](images/login.png)
 
 ##User Sign UP View
 
-![Alt Image](images/signup.png)
+![Alt Image Text](images/signup.png)
 
 ##User Main List of Taks
 
