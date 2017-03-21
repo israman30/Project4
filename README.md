@@ -124,6 +124,27 @@ Todoist         | App Store   | No         |    Yes       |
 
 ![Alt Image Text](images/Screen-Shot.png)
 
+##App screenshots
+
+##User Log in View
+
+![Alt Image](images/login.png)
+
+##User Sign UP View
+
+![Alt Image](images/signup.png)
+
+##User Main List of Taks
+
+![Alt Image Text](images/main.png)
+
+##Profile User View
+
+![Alt Image Text](images/profile.png)
+
+##Map View wth user location
+
+![Alt Image Text](images/map.png)
 
 
 
