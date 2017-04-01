@@ -43,7 +43,7 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
     // MARK: Initializing Google Maps
     func initGoogleMaps(){
         // get camera position
-        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
+        let camera = GMSCameraPosition.camera(withLatitude: 37.7848236315, longitude: -122.4048, zoom: 6.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.isMyLocationEnabled = true
         self.googleMapView.camera =  camera
@@ -55,6 +55,7 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
         
     }
     
+    // MARK: Creating a Marker on Google Maps
     func createMarker(titleMarker: String, iconMarker: UIImage, latitude: CLLocationDegrees, longitude: CLLocationDegrees){
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2DMake(latitude, longitude)
@@ -63,14 +64,14 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
         marker.map = googleMapView
     }
      //MARK: drop a pin on any location
-//    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
-//        print("You tapped at \(coordinate.latitude), \(coordinate.longitude)")
-//        googleMapView.clear()
-//        let marker = GMSMarker(position: coordinate)
-//        marker.map = googleMapView
-//        marker.title = "\(marker.title)"
-//        marker.appearAnimation = kGMSMarkerAnimationPop
-//    }
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        print("You tapped at \(coordinate.latitude), \(coordinate.longitude)")
+        googleMapView.clear()
+        let marker = GMSMarker(position: coordinate)
+        marker.map = googleMapView
+        marker.title = "\(marker.title)"
+        marker.appearAnimation = kGMSMarkerAnimationPop
+    }
     
     
     //MARK: Location manager delegate functions
@@ -78,13 +79,16 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
         print("Error while get location \(error)")
     }
     
-    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last
-        let camera = GMSCameraPosition.camera(withLatitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!, zoom: 17.0)
-        self.googleMapView.animate(to: camera)
+//        let camera = GMSCameraPosition.camera(withLatitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!, zoom: 17.0)
+//        self.googleMapView.animate(to: camera)
         self.locationManager.stopUpdatingLocation()
         
+        let locationNew = CLLocation(latitude: 37.7848236315, longitude: -122.4048)
+        createMarker(titleMarker: "Tujuk", iconMarker: #imageLiteral(resourceName: "pin-1"), latitude: locationNew.coordinate.latitude, longitude: locationNew.coordinate.longitude)
+        createMarker(titleMarker: "Place", iconMarker: #imageLiteral(resourceName: "pin-1"), latitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!)
+        self.locationManager.stopUpdatingLocation()
     }
     
     //MARK: GMSMapView delegate
@@ -99,6 +103,16 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
         }
     }
     
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        googleMapView.isMyLocationEnabled = true
+        return false
+    }
+    
+    func didTapMyLocationButton(for mapView: GMSMapView) -> Bool {
+        googleMapView.isMyLocationEnabled = true
+        googleMapView.selectedMarker = nil
+        return false
+    }
     //MARK: Autocomplete delegate
     func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
         let camera = GMSCameraPosition.camera(withLatitude: place.coordinate.latitude, longitude: place.coordinate.longitude, zoom: 15.0)
