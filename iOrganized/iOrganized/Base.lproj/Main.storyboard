@@ -409,21 +409,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="65s-53-zRw">
                                 <rect key="frame" x="16" y="123" width="343" height="321"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter email" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TTR-sN-rlS">
-                                        <rect key="frame" x="16" y="83" width="311" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="o3C-Ta-b8l"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04R-MT-u1i">
                                         <rect key="frame" x="16" y="145" width="311" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -443,38 +428,13 @@
                                             <action selector="resetPasswordButton:" destination="wRp-lS-2jv" eventType="touchUpInside" id="jNU-pa-w8g"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8p-FJ-bSE">
-                                        <rect key="frame" x="16" y="203" width="311" height="40"/>
-                                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="KI5-UV-Lkb"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                        <state key="normal" title="Back">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="conerRadius">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="dGe-i0-OQ0" kind="unwind" unwindAction="unwindToLoginWithStoryboard:" id="hGQ-O0-EcP"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="H8p-FJ-bSE" secondAttribute="trailing" constant="16" id="3ry-BZ-pln"/>
-                                    <constraint firstItem="H8p-FJ-bSE" firstAttribute="leading" secondItem="65s-53-zRw" secondAttribute="leading" constant="16" id="4IC-nc-YfG"/>
-                                    <constraint firstItem="H8p-FJ-bSE" firstAttribute="top" secondItem="04R-MT-u1i" secondAttribute="bottom" constant="18" id="8da-or-LVr"/>
-                                    <constraint firstAttribute="trailing" secondItem="TTR-sN-rlS" secondAttribute="trailing" constant="16" id="99Q-kF-0sD"/>
                                     <constraint firstAttribute="height" constant="321" id="BWE-O9-khN"/>
-                                    <constraint firstItem="04R-MT-u1i" firstAttribute="top" secondItem="TTR-sN-rlS" secondAttribute="bottom" constant="22" id="Dv3-IT-Q7j"/>
                                     <constraint firstAttribute="trailing" secondItem="04R-MT-u1i" secondAttribute="trailing" constant="16" id="NRH-Vz-nuf"/>
                                     <constraint firstAttribute="width" constant="343" id="c1m-E5-SrM"/>
                                     <constraint firstItem="04R-MT-u1i" firstAttribute="leading" secondItem="65s-53-zRw" secondAttribute="leading" constant="16" id="da3-gE-nfq"/>
-                                    <constraint firstItem="TTR-sN-rlS" firstAttribute="leading" secondItem="65s-53-zRw" secondAttribute="leading" constant="16" id="lVy-a7-oxG"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExE-8F-umw">
@@ -486,29 +446,75 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5EK-ux-6YJ" customClass="JiroTextField" customModule="iOrganized" customModuleProvider="target">
+                                <rect key="frame" x="35" y="205" width="308" height="57"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="eKc-gX-TeD"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8p-FJ-bSE">
+                                <rect key="frame" x="32" y="313" width="311" height="40"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KI5-UV-Lkb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="conerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="dGe-i0-OQ0" kind="unwind" unwindAction="unwindToLoginWithStoryboard:" id="hGQ-O0-EcP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.24337610602378845" green="0.40340745449066162" blue="0.44941526651382446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="5EK-ux-6YJ" firstAttribute="top" secondItem="ExE-8F-umw" secondAttribute="bottom" constant="79" id="0uW-JU-JoT"/>
+                            <constraint firstItem="H8p-FJ-bSE" firstAttribute="leading" secondItem="65i-SB-zeY" secondAttribute="leading" constant="32" id="3IC-wB-8rl"/>
                             <constraint firstItem="oHD-uW-fkg" firstAttribute="top" secondItem="efw-RG-M2n" secondAttribute="bottom" id="8tR-8Q-7lH"/>
+                            <constraint firstItem="5EK-ux-6YJ" firstAttribute="leading" secondItem="65i-SB-zeY" secondAttribute="leading" constant="35" id="9Ce-id-zMu"/>
+                            <constraint firstItem="H8p-FJ-bSE" firstAttribute="top" secondItem="04R-MT-u1i" secondAttribute="bottom" constant="5" id="Aed-ll-jGG"/>
                             <constraint firstItem="efw-RG-M2n" firstAttribute="leading" secondItem="65i-SB-zeY" secondAttribute="leading" id="DJG-6u-s3N"/>
                             <constraint firstAttribute="trailing" secondItem="efw-RG-M2n" secondAttribute="trailing" id="Fey-qb-EsX"/>
+                            <constraint firstAttribute="trailing" secondItem="5EK-ux-6YJ" secondAttribute="trailing" constant="32" id="Jsp-ad-NHz"/>
                             <constraint firstAttribute="trailing" secondItem="ExE-8F-umw" secondAttribute="trailing" constant="61" id="LqD-TN-8Od"/>
                             <constraint firstItem="efw-RG-M2n" firstAttribute="top" secondItem="65i-SB-zeY" secondAttribute="top" id="NgQ-El-A8M"/>
                             <constraint firstItem="ExE-8F-umw" firstAttribute="leading" secondItem="65i-SB-zeY" secondAttribute="leading" constant="61" id="T2e-hy-USl"/>
+                            <constraint firstAttribute="bottom" secondItem="H8p-FJ-bSE" secondAttribute="bottom" constant="314" id="UUF-8g-SqS"/>
                             <constraint firstItem="ExE-8F-umw" firstAttribute="top" secondItem="JUH-2W-aLy" secondAttribute="bottom" constant="49" id="ZJJ-NW-wbV"/>
-                            <constraint firstItem="TTR-sN-rlS" firstAttribute="top" secondItem="ExE-8F-umw" secondAttribute="bottom" constant="80" id="cSf-Vn-CzM"/>
                             <constraint firstItem="65s-53-zRw" firstAttribute="centerX" secondItem="65i-SB-zeY" secondAttribute="centerX" id="hid-SW-0Yt"/>
+                            <constraint firstAttribute="trailing" secondItem="H8p-FJ-bSE" secondAttribute="trailing" constant="32" id="iVD-vg-eTZ"/>
                             <constraint firstItem="65s-53-zRw" firstAttribute="centerY" secondItem="65i-SB-zeY" secondAttribute="centerY" constant="-50" id="vPm-Yt-tMe"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="resetPasswordTxtField" destination="TTR-sN-rlS" id="JTG-Uw-0hA"/>
+                        <outlet property="resetPasswordTxtField" destination="5EK-ux-6YJ" id="GVQ-GZ-fFN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaz-c0-qnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dGe-i0-OQ0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1106" y="139"/>
+            <point key="canvasLocation" x="1104.8" y="138.98050974512745"/>
         </scene>
         <!--iO-->
         <scene sceneID="eUx-N6-nGF">
