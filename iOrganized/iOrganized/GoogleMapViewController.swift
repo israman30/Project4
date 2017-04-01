@@ -10,11 +10,20 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
+enum Location {
+    case startLocation
+    case destinationLocation
+}
+
 class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMapViewDelegate, GMSAutocompleteViewControllerDelegate {
 
     @IBOutlet weak var googleMapView: GMSMapView!
     
     var locationManager = CLLocationManager()
+    var locationSelected = Location.startLocation
+    
+    var startLocation = CLLocation()
+    var locationEnd = CLLocation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +32,8 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        locationManager.startMonitoringSignificantLocationChanges()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startMonitoringSignificantLocationChanges()
         
         initGoogleMaps()
@@ -36,22 +47,30 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate, GMSMa
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.isMyLocationEnabled = true
         self.googleMapView.camera =  camera
-        
         self.googleMapView.delegate = self
         self.googleMapView.isMyLocationEnabled = true
         self.googleMapView.settings.myLocationButton = true
+        self.googleMapView.settings.compassButton = true
+        self.googleMapView.settings.zoomGestures = true
         
     }
     
-     //MARK: drop a pin on any location
-    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
-        print("You tapped at \(coordinate.latitude), \(coordinate.longitude)")
-        googleMapView.clear()
-        let marker = GMSMarker(position: coordinate)
+    func createMarker(titleMarker: String, iconMarker: UIImage, latitude: CLLocationDegrees, longitude: CLLocationDegrees){
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2DMake(latitude, longitude)
+        marker.title = titleMarker
+        marker.icon = iconMarker
         marker.map = googleMapView
-        marker.title = "\(marker.title)"
-        marker.appearAnimation = kGMSMarkerAnimationPop
     }
+     //MARK: drop a pin on any location
+//    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+//        print("You tapped at \(coordinate.latitude), \(coordinate.longitude)")
+//        googleMapView.clear()
+//        let marker = GMSMarker(position: coordinate)
+//        marker.map = googleMapView
+//        marker.title = "\(marker.title)"
+//        marker.appearAnimation = kGMSMarkerAnimationPop
+//    }
     
     
     //MARK: Location manager delegate functions
