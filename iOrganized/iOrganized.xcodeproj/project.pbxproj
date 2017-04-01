@@ -21,6 +21,8 @@
 		8D4FAE111E3EB5BD00573ED9 /* ResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FAE101E3EB5BD00573ED9 /* ResetViewController.swift */; };
 		8D4FAE151E3ECCDE00573ED9 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FAE141E3ECCDE00573ED9 /* ListTableViewController.swift */; };
 		8D4FAE171E3ED27600573ED9 /* DescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FAE161E3ED27600573ED9 /* DescriptionTableViewController.swift */; };
+		8D7DF5451E906B73004F1D49 /* JiroTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7DF5441E906B73004F1D49 /* JiroTxtField.swift */; };
+		8D7DF5481E906FC7004F1D49 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7DF5471E906FC7004F1D49 /* TextFieldEffects.swift */; };
 		8DA11A441E455E530040A546 /* UpdateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA11A431E455E530040A546 /* UpdateTableViewController.swift */; };
 		8DA11A461E458CD00040A546 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA11A451E458CD00040A546 /* Posts.swift */; };
 		8DD3F9551E440E1A003183EB /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3F9541E440E1A003183EB /* MyProfileViewController.swift */; };
@@ -48,6 +50,9 @@
 		8D4FAE101E3EB5BD00573ED9 /* ResetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetViewController.swift; sourceTree = "<group>"; };
 		8D4FAE141E3ECCDE00573ED9 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		8D4FAE161E3ED27600573ED9 /* DescriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewController.swift; sourceTree = "<group>"; };
+		8D7DF5441E906B73004F1D49 /* JiroTxtField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroTxtField.swift; sourceTree = "<group>"; };
+		8D7DF5461E906F62004F1D49 /* TextFieldEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		8D7DF5471E906FC7004F1D49 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
 		8DA11A431E455E530040A546 /* UpdateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateTableViewController.swift; sourceTree = "<group>"; };
 		8DA11A451E458CD00040A546 /* Posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		8DD3F9541E440E1A003183EB /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +133,9 @@
 				8D4FADFC1E3EAF8C00573ED9 /* Main.storyboard */,
 				8D4FADFF1E3EAF8C00573ED9 /* Assets.xcassets */,
 				8D4FAE011E3EAF8C00573ED9 /* LaunchScreen.storyboard */,
+				8D7DF5441E906B73004F1D49 /* JiroTxtField.swift */,
+				8D7DF5471E906FC7004F1D49 /* TextFieldEffects.swift */,
+				8D7DF5461E906F62004F1D49 /* TextFieldEffects.h */,
 			);
 			name = UIs;
 			sourceTree = "<group>";
@@ -314,10 +322,12 @@
 				8D4FADF91E3EAF8C00573ED9 /* AppDelegate.swift in Sources */,
 				8D0DC1631E440A6C00E2BD47 /* User.swift in Sources */,
 				8D4FAE151E3ECCDE00573ED9 /* ListTableViewController.swift in Sources */,
+				8D7DF5481E906FC7004F1D49 /* TextFieldEffects.swift in Sources */,
 				8DA11A441E455E530040A546 /* UpdateTableViewController.swift in Sources */,
 				8DD3F9591E450AF0003183EB /* ListOfTableViewCell.swift in Sources */,
 				8D4FAE111E3EB5BD00573ED9 /* ResetViewController.swift in Sources */,
 				8D059D341E4033BA00B268EA /* NetworkingSerivices.swift in Sources */,
+				8D7DF5451E906B73004F1D49 /* JiroTxtField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
