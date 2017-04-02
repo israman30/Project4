@@ -30,6 +30,13 @@ class UpdateTableViewController: UITableViewController {
         descriptionTxtField.text = todo.content
         itemNameTxtField.text = todo.title
         
+//        descriptionTxtField.isSelectable = true
+//        descriptionTxtField.isEditable = false
+//        descriptionTxtField.dataDetectorTypes = UIDataDetectorTypes.link
+//        descriptionTxtField.dataDetectorTypes = UIDataDetectorTypes.address
+//        descriptionTxtField.dataDetectorTypes = UIDataDetectorTypes.calendarEvent
+//        descriptionTxtField.dataDetectorTypes = UIDataDetectorTypes.phoneNumber
+        
     }
     
     // Dismiss keyboard when touch outside

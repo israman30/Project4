@@ -49,7 +49,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                        <state key="normal" title="New User? Please Sign Up!">
+                                        <state key="normal" title="Sign Up!">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -660,7 +660,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="217.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Description.." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dUU-CP-AHd">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dUU-CP-AHd">
                                                     <rect key="frame" x="8" y="0.0" width="359" height="217"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
