@@ -799,7 +799,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wxI-rT-udZ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="List" image="list" id="mUS-4l-dO6"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="r4F-X0-HZl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r4F-X0-HZl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1012,7 +1012,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="avp-uv-gP8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="Vre-rS-hN8"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wO9-5i-Txu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wO9-5i-Txu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
