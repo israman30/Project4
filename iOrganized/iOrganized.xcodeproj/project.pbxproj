@@ -133,11 +133,19 @@
 				8D4FADFC1E3EAF8C00573ED9 /* Main.storyboard */,
 				8D4FADFF1E3EAF8C00573ED9 /* Assets.xcassets */,
 				8D4FAE011E3EAF8C00573ED9 /* LaunchScreen.storyboard */,
+				8D7DF54E1E92ADCD004F1D49 /* TxtFldEdit */,
+			);
+			name = UIs;
+			sourceTree = "<group>";
+		};
+		8D7DF54E1E92ADCD004F1D49 /* TxtFldEdit */ = {
+			isa = PBXGroup;
+			children = (
 				8D7DF5441E906B73004F1D49 /* JiroTxtField.swift */,
 				8D7DF5471E906FC7004F1D49 /* TextFieldEffects.swift */,
 				8D7DF5461E906F62004F1D49 /* TextFieldEffects.h */,
 			);
-			name = UIs;
+			name = TxtFldEdit;
 			sourceTree = "<group>";
 		};
 		8DA11A421E4512940040A546 /* Outlets */ = {
